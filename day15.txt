@@ -1,0 +1,141 @@
+## Dictionary
+- mutable
+- key,value-pair
+- key: any data type:int,str,float
+- values: any datatype and any data structure- list/tuple/set/str/dict
+- keys are are unique in nature
+- key,value together called as an item
+    
+
+dic={'key':'value','string':'name','integer':12,'float':9.6,123:"int"}
+print(dic)
+
+print(dir(dic))
+
+dic1=dic.copy()
+dic1
+
+dic.clear()
+dic
+
+dic1.get("string")
+
+dic1.get(123)
+
+dic1.items()
+
+dic1.keys()
+
+dic1.values()
+
+dic1.pop("integer")
+
+dic1
+
+dic1.popitem()
+
+dic1.update({12.3:"abc",12:78})
+
+dic1
+
+dic1.update({1:["int",12,34.3]})
+
+dic1
+
+dic1["23"]="apssdc"
+
+dic1
+
+dic1["string"]="tejaswini"
+
+dic1
+
+x=("keys","string")
+dic1.fromkeys(x)
+
+dic1
+
+keys={"a","b","c","d"}
+value={"alp","abc","def","gj"}
+v=dict.fromkeys(keys,value)
+
+v
+
+help(dict.fromkeys)
+
+for item in dic1.keys():
+    print(item)
+
+for item in dic1.values():
+    print(item)
+
+for item in dic1.items():
+    print(item)
+
+for key,value in dic1.items():
+    print(key,value,sep=" : ")
+
+# Dictionary of squares of numbers from 1 to 15
+squares={}
+for i in range(1,16):
+    squares[i]=i**2
+squares
+
+# prepare a dictionary of characters from A to H with their ASCII values
+# A to z =65 to 90
+# a to z=97 to 122
+d={}
+value=65
+for i in range(8):
+    d[chr(value)]=value
+    value+=1
+d
+
+chr(66)
+
+ord("b")
+
+# counting the elements
+a=[1,2,3,4,5,6,4,2,2,1,1,2]
+d1={}
+for i in a:
+    d1[i]=a.count(i)
+d1
+
+            # (or)
+d={}
+for i in a:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+d
+
+## Packages and Modules
+
+help("modules")
+
+import math
+
+print(dir(math))
+
+help(math)
+
+math.sqrt(10)
+
+math.factorial(5)
+
+pip list
+
+import module
+
+help(module)
+
+module.greeting("Mounika")
+
+from pack import file
+
+help(file)
+
+file.even(8)
+
